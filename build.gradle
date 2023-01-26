@@ -1,5 +1,13 @@
 plugins {
-    id 'java'
+    id "application"
+}
+apply plugin : "java"
+ext {
+    javaMainClass = "ca.garrett.githubactions.Main"
+}
+
+application {
+    mainClassName = javaMainClass
 }
 
 group 'ca.garrett.githubactions'

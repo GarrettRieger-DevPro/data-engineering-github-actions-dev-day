@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef4058d6-b771-4669-8160-70d8a09104d6" name="Changes" comment="task 3 commits">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/yamlaction.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/yamlaction.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/yamlaction.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +36,12 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="data-engineering-github-actions-dev-day" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="data-engineering-github-actions-dev-day" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -86,7 +93,20 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.data-engineering-github-actions-dev-day [testClasses]">
+  <component name="RunManager" selected="Gradle.data-engineering-github-actions-dev-day [run]">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ca.garrett.githubactions.Main" />
+      <module name="data-engineering-github-actions-dev-day.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.garrett.githubactions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JavaTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -110,7 +130,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="data-engineering-github-actions-dev-day [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="data-engineering-github-actions-dev-day [classes]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -121,7 +141,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="assemble" />
+            <option value="classes" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -131,7 +151,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="data-engineering-github-actions-dev-day [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="data-engineering-github-actions-dev-day [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -142,28 +162,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="data-engineering-github-actions-dev-day [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="jar" />
+            <option value="run" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -196,11 +195,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.data-engineering-github-actions-dev-day [testClasses]" />
-        <item itemvalue="Gradle.data-engineering-github-actions-dev-day [jar]" />
-        <item itemvalue="Gradle.data-engineering-github-actions-dev-day [build]" />
-        <item itemvalue="Gradle.data-engineering-github-actions-dev-day [assemble]" />
+        <item itemvalue="Gradle.data-engineering-github-actions-dev-day [run]" />
+        <item itemvalue="Gradle.data-engineering-github-actions-dev-day [classes]" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.JavaTests" />
+        <item itemvalue="Gradle.data-engineering-github-actions-dev-day [testClasses]" />
       </list>
     </recent_temporary>
   </component>
@@ -368,7 +367,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674752935082</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="task 3 commits">
+      <created>1674754075399</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1674754075399</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
