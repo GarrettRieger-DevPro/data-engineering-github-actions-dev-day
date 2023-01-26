@@ -1,10 +1,10 @@
 package ca.garrett.githubactions;
 
 import org.yaml.snakeyaml.Yaml;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
+
+import java.io.*;
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) throws Exception {
@@ -19,12 +19,48 @@ public class Main {
         }
     }
 
-    private static void gitCommitPushDiff() {
+    private static void gitCommitPushDiff() throws IOException {
         // get git diff
-        String cmd = "git diff --name-only HEAD HEAD~1";
-        String result = execCmd(cmd);
+        String cmdGitDiff = "git diff --name-only HEAD HEAD~1";
+        String resultGitDiff = execCmd(cmdGitDiff);
 
-        List<String> changedFilesList = Arrays.stream(result.split("\n")).toList();
+        List<String> changedFilesList = Arrays.stream(resultGitDiff.split("\n")).toList();
+
+        System.out.println(changedFilesList);
+
+        List<String> changedImages = new ArrayList<>();
+
+        for(String changedFile: changedFilesList) {
+            List<String> pathParts = Arrays.stream(changedFile.split("/")).toList();
+            if (pathParts.contains("images")) {
+                changedImages.add(pathParts.get(4));
+            }
+        }
+
+        List<String> changedImagesFinal = changedImages.stream().distinct().collect(Collectors.toList());
+
+        if (changedImagesFinal.isEmpty()) {
+            return;
+        }
+
+        FileWriter fileWriter = new FileWriter("./manifest");
+        PrintWriter printWriter = new PrintWriter(fileWriter);
+
+        for(String image : changedImagesFinal) {
+            printWriter.println(image);
+        }
+
+        String cmdGitAdd = "git add .";
+        String resultGitAdd = execCmd(cmdGitAdd);
+
+        String cmdGitCommit = "git commit -m building-image-manifest";
+        String resultGitCommit = execCmd(cmdGitCommit);
+
+
+        String cmdGitPush = "git push";
+        String resultGitPush = execCmd(cmdGitPush);
+
+
     }
 
     private static String execCmd(String cmd) {
