@@ -15,6 +15,19 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws Exception {
+        configYamlValidate();
+        if (args.length > 0) {
+            if (Objects.equals(args[0], "images")) {
+                gitCommitPushDiff();
+            }
+        }
+    }
+
+    private static void gitCommitPushDiff() {
+
+    }
+
+    private static void configYamlValidate() throws Exception {
         InputStream inputStream = new FileInputStream("src/main/resources/config.yaml");
 
         Yaml yaml = new Yaml();
@@ -23,7 +36,6 @@ public class Main {
         for (Object o : data) {
             validateData(o);
         }
-
     }
 
     private static void validateData(Object data) throws Exception {
