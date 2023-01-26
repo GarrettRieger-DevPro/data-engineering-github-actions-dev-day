@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef4058d6-b771-4669-8160-70d8a09104d6" name="Changes" comment="task 3 commits">
+    <list default="true" id="ef4058d6-b771-4669-8160-70d8a09104d6" name="Changes" comment="task 4 commits">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ca/garrett/githubactions/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/garrett/githubactions/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +88,12 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.data-engineering-github-actions-dev-day [run]">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ca.garrett.githubactions.Main" />
       <module name="data-engineering-github-actions-dev-day.main" />
@@ -374,7 +381,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674754705845</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="task 4 commits">
+      <created>1674755140960</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1674755140960</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,6 +399,7 @@
     <MESSAGE value="task 1" />
     <MESSAGE value="task 2 commits" />
     <MESSAGE value="task 3 commits" />
-    <option name="LAST_COMMIT_MESSAGE" value="task 3 commits" />
+    <MESSAGE value="task 4 commits" />
+    <option name="LAST_COMMIT_MESSAGE" value="task 4 commits" />
   </component>
 </project>
