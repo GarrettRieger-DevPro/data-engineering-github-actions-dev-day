@@ -39,7 +39,7 @@ public class Main {
 
         List<String> changedImagesFinal = changedImages.stream().distinct().collect(Collectors.toList());
 
-        FileWriter fileWriter = new FileWriter("src/main/resources/manifest");
+        FileWriter fileWriter = new FileWriter("./manifest");
         PrintWriter printWriter = new PrintWriter(fileWriter);
 
         for(String image : changedImagesFinal) {
