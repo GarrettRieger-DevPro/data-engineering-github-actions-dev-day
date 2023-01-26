@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef4058d6-b771-4669-8160-70d8a09104d6" name="Changes" comment="test commits">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ca/garrett/githubactions/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/garrett/githubactions/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/image1/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/image1/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/image2/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/image2/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/image3/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/image3/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/image3/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/image3/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -508,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674768356965</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="test commits">
+      <created>1674768465414</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1674768465414</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

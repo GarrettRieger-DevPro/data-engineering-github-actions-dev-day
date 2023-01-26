@@ -39,10 +39,6 @@ public class Main {
 
         List<String> changedImagesFinal = changedImages.stream().distinct().collect(Collectors.toList());
 
-        if (changedImagesFinal.isEmpty()) {
-            return;
-        }
-
         FileWriter fileWriter = new FileWriter("src/main/resources/manifest");
         PrintWriter printWriter = new PrintWriter(fileWriter);
 
@@ -53,14 +49,14 @@ public class Main {
         printWriter.close();
 
         String cmdGitAdd = "git add .";
-        System.out.println(execCmd(cmdGitAdd));
+        System.out.println("git add results: " + execCmd(cmdGitAdd));
 
         String cmdGitCommit = "git commit -m building-image-manifest";
-        System.out.println(execCmd(cmdGitCommit));
+        System.out.println("git commit reuslts: " + execCmd(cmdGitCommit));
 
 
         String cmdGitPush = "git push";
-        System.out.println(execCmd(cmdGitPush));
+        System.out.println("git push results: " +execCmd(cmdGitPush));
 
 
     }
