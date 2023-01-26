@@ -1,8 +1,8 @@
-name: first-action
+name: push-with-path-filter
 on:
   push:
-    branches:
-      - master
+    paths:
+      - "**.java"
 
 jobs:
   echo:
