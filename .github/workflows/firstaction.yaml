@@ -1,15 +1,22 @@
-name: opened-pull-request
+name: unit-tests
 on:
   pull_request:
     types: [opened, synchronize]
 
 jobs:
-  echo:
+  run-unit-tests:
     runs-on: ubuntu-latest
 
     steps:
-      - name: echo text
+      - name: pull repo
+        uses: actions/checkout@v3
+      - name: setup python environment
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+      - name: configure python for tests
         run: |
-          echo "Job ran successfully"
-          echo "Source branch is ${GITHUB_HEAD_REF}"
-          echo "Target branch is ${GITHUB_BASE_REF}"
+          pip install pytest
+      - name: run tests
+        run: |
+          pytest
