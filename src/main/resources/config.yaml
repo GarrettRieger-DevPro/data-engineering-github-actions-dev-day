@@ -4,7 +4,6 @@
 - name: "should also pass"
   id: 5
   debug: true
-- name: 5
+- name: "should finally pass"
   id: "test"
   debug: 5
-  debg: true
