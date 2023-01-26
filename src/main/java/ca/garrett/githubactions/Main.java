@@ -20,7 +20,6 @@ public class Main {
     }
 
     private static void gitCommitPushDiff() throws IOException {
-        // get git diff
         String cmdGitDiff = "git diff --name-only HEAD HEAD~1";
         String resultGitDiff = execCmd(cmdGitDiff);
 
@@ -37,7 +36,7 @@ public class Main {
             }
         }
 
-        List<String> changedImagesFinal = changedImages.stream().distinct().collect(Collectors.toList());
+        List<String> changedImagesFinal = changedImages.stream().distinct().toList();
 
         FileWriter fileWriter = new FileWriter("./manifest");
         PrintWriter printWriter = new PrintWriter(fileWriter);
