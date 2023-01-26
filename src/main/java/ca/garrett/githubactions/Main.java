@@ -56,7 +56,7 @@ public class Main {
 
         try {
             Integer.parseInt(properties.get("name"));
-            throw new Exception("Invalid name" + properties.get("name"));
+            throw new Exception("Invalid name (must be string): " + properties.get("name"));
         } catch (NumberFormatException e) {
 
         }
