@@ -24,7 +24,7 @@ public class Main {
         String cmd = "git diff --name-only HEAD HEAD~1";
         String result = execCmd(cmd);
 
-        System.out.println(result);
+        List<String> changedFilesList = Arrays.stream(result.split("\n")).toList();
     }
 
     private static String execCmd(String cmd) {

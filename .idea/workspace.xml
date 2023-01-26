@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef4058d6-b771-4669-8160-70d8a09104d6" name="Changes" comment="test commits">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/imagesdiff.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/imagesdiff.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/garrett/githubactions/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/garrett/githubactions/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -461,7 +461,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674767370728</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="test commits">
+      <created>1674767523162</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1674767523162</updated>
+    </task>
+    <task id="LOCAL-00036" summary="test commits">
+      <created>1674767591745</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1674767591745</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
