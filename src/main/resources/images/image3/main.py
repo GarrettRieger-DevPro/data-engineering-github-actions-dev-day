@@ -1,8 +1,4 @@
 
-
-
-
-
 def main():
     pass
 

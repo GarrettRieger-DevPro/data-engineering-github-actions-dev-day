@@ -43,7 +43,7 @@ public class Main {
             return;
         }
 
-        FileWriter fileWriter = new FileWriter("./manifest");
+        FileWriter fileWriter = new FileWriter("src/main/resources/manifest");
         PrintWriter printWriter = new PrintWriter(fileWriter);
 
         for(String image : changedImagesFinal) {
