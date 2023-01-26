@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef4058d6-b771-4669-8160-70d8a09104d6" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/firstaction.yaml" afterDir="false" />
+    <list default="true" id="ef4058d6-b771-4669-8160-70d8a09104d6" name="Changes" comment="task 1">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/firstaction.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/firstaction.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +51,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674745954109</updated>
-      <workItem from="1674745955480" duration="310000" />
+      <workItem from="1674745955480" duration="750000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1674745983269</created>
@@ -80,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674746190033</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="task 1">
+      <created>1674746295802</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674746295802</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,6 +96,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="task 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="task 1" />
   </component>
 </project>
