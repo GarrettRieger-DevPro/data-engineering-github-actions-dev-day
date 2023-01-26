@@ -1,8 +1,5 @@
-name: push-with-path-filter
-on:
-  push:
-    paths:
-      - "**.java"
+name: push-with-conditional
+on: push
 
 jobs:
   echo:
@@ -10,4 +7,7 @@ jobs:
 
     steps:
       - name: echo text
-        run: echo "Job ran successfully"
+        run: echo "Job ran successfully "
+      - name: optional step
+        run: echo "Branch is bug fix"
+        if: ${{ startsWith(github.ref_name, 'bug') }}
