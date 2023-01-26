@@ -24,7 +24,7 @@ public class Main {
     }
 
     private static void gitCommitPushDiff() {
-
+        System.out.println("images arg picked up!");
     }
 
     private static void configYamlValidate() throws Exception {
