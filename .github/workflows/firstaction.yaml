@@ -2,7 +2,7 @@ name: first-action
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   echo:

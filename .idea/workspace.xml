@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef4058d6-b771-4669-8160-70d8a09104d6" name="Changes" comment="task 1">
+    <list default="true" id="ef4058d6-b771-4669-8160-70d8a09104d6" name="Changes" comment="task 2 commits">
       <change beforePath="$PROJECT_DIR$/.github/workflows/firstaction.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/firstaction.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +50,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674745954109</updated>
-      <workItem from="1674745955480" duration="750000" />
+      <workItem from="1674745955480" duration="783000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1674745983269</created>
@@ -88,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674746295802</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="task 2 commits">
+      <created>1674746716184</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1674746716184</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,6 +103,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="task 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="task 1" />
+    <MESSAGE value="task 2 commits" />
+    <option name="LAST_COMMIT_MESSAGE" value="task 2 commits" />
   </component>
 </project>
