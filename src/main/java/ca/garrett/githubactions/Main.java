@@ -51,9 +51,9 @@ public class Main {
         System.out.println("git add results: " + execCmd(cmdGitAdd));
 
         String cmdGitCommit = "git commit -m building-image-manifest";
-        System.out.println("git commit reuslts: " + execCmd(cmdGitCommit));
+        System.out.println("git commit results: " + execCmd(cmdGitCommit));
 
-        String cmdGitPush = "git push";
+        String cmdGitPush = "git push origin";
         System.out.println("git push results: " +execCmd(cmdGitPush));
     }
 
