@@ -2,6 +2,7 @@ package ca.garrett.githubactions;
 
 import org.yaml.snakeyaml.Yaml;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.*;
 
@@ -9,17 +10,32 @@ public class Main {
     public static void main(String[] args) throws Exception {
 
         if (args.length > 0) {
-            if (Objects.equals(args[0], "yaml")) {
+            if (Arrays.stream(args).toList().contains("yaml")) {
                 configYamlValidate();
             }
-            if (Objects.equals(args[0], "images")) {
+            if (Arrays.stream(args).toList().contains("images")) {
                 gitCommitPushDiff();
             }
         }
     }
 
     private static void gitCommitPushDiff() {
-        System.out.println("images arg picked up!");
+        // get git diff
+        String cmd = "git diff --name-only HEAD HEAD~1";
+        String result = execCmd(cmd);
+
+        System.out.println(result);
+    }
+
+    private static String execCmd(String cmd) {
+        String result = null;
+        try (InputStream inputStream = Runtime.getRuntime().exec(cmd).getInputStream();
+             Scanner s = new Scanner(inputStream).useDelimiter("\\A")) {
+            result = s.hasNext() ? s.next() : null;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return result;
     }
 
     private static void configYamlValidate() throws Exception {
