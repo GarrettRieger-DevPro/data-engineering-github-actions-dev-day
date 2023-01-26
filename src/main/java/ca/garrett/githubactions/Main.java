@@ -7,8 +7,11 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        configYamlValidate();
+
         if (args.length > 0) {
+            if (Objects.equals(args[0], "yaml")) {
+                configYamlValidate();
+            }
             if (Objects.equals(args[0], "images")) {
                 gitCommitPushDiff();
             }
