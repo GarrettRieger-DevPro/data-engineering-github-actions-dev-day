@@ -7,6 +7,6 @@ public class JavaTests {
 
     @Test
     public void SampleTest() {
-        Assertions.assertTrue(true);
+        Assertions.assertTrue(false);
     }
 }
