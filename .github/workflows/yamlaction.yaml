@@ -1,0 +1,9 @@
+name: yaml-actions
+on:
+  pull_request:
+    types: [opened, synchronize]
+    branches:
+      - master
+    paths:
+      - "**.yaml"
+
