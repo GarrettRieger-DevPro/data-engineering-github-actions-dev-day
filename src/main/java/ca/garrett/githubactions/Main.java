@@ -52,7 +52,7 @@ public class Main {
         String cmdGitCommit = "git commit -m building-image-manifest";
         System.out.println("git commit results: " + execCmd(cmdGitCommit));
 
-        String cmdGitPush = "git push origin";
+        String cmdGitPush = "git push";
         System.out.println("git push results: " +execCmd(cmdGitPush));
     }
 
