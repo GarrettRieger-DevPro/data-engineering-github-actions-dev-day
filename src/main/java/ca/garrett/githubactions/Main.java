@@ -50,6 +50,8 @@ public class Main {
             printWriter.println(image);
         }
 
+        printWriter.close();
+
         String cmdGitAdd = "git add .";
         System.out.println(execCmd(cmdGitAdd));
 
